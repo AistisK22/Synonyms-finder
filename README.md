@@ -1,3 +1,2 @@
 # Synonyms-finder
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-5ukw5l)
+A very simple app that finds synonyms for a given word using datamuse API.
