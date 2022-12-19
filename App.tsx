@@ -21,15 +21,19 @@ export default function App() {
       <form>
         <label htmlFor="word">Your word:</label> <br />
         <input onChange={(e) => setWord(e.target.value)} placeholder="Word" />
-        <br />
-        <input onClick={(e) => find(e)} type="submit" value="Submit" />
+        <input
+          id="submit"
+          onClick={(e) => find(e)}
+          type="submit"
+          value="Find"
+        />
       </form>
       <h3>
         <b>{word}</b> synonyms:
       </h3>
       <ul>
         {syn.map((it) => (
-          <li>{it.word}</li>
+          <li key={it.id}>{it.word}</li>
         ))}
         {syn.length < 1 && <p>No results</p>}
       </ul>
